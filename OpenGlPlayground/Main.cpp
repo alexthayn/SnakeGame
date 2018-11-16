@@ -22,6 +22,9 @@ int grow = INITIAL_SIZE;
 list<int> snakeX;
 list<int> snakeY;
 
+list<int> snake2X;
+list<int> snake2Y;
+
 char board[gridWidth][gridHeight];
 char direction = 'E';
 bool gameOver = true;
@@ -41,6 +44,14 @@ void DrawElement(double i, double j, char element) {
 		break;
 	case 's':
 		glColor3f(0, !bw*.5, bw*.5);
+		DrawCircle(x, y, r, 10);
+		break;
+	case 'P':
+		glColor3f(0, 1, 1);
+		DrawCircle(x, y, r, 10);
+		break;
+	case 'p':
+		glColor3f(0, 1, 1);
 		DrawCircle(x, y, r, 10);
 		break;
 	case 'A':
@@ -143,6 +154,9 @@ void keyboard(int key) {
 				gameOver = false;
 				snakeX.clear();
 				snakeY.clear();
+				snake2X.clear();
+				snake2X.clear();
+
 				headX = gridWidth / 2.0;
 				headY = gridHeight / 2.0;
 				for (int i = 0; i < gridWidth; i++) {

@@ -77,8 +77,10 @@ void update() {
 	}
 
 	//Add walls
-	for (int i = 10; i < 30; i++)
+	for (int i = 10; i < 40; i++) {
 		board[10][i] = 'W';
+		board[50][i] = 'W';
+	}
 
 	//Find out where the head will be...
 	switch (direction) {
@@ -108,7 +110,7 @@ void update() {
 	{
 		case 'A': grow += 4; break;
 		case 'G': grow += 8; break;
-		case 'S': case 's': gameOver = true; break;
+		case 'S': case 's': case 'W': gameOver = true; break;
 	}
 
 	//Move the snake's head.

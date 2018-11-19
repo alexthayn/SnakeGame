@@ -1,0 +1,142 @@
+               B                                  
+                                                  
+    B                                             
+A                        G        A               
+         B                          A             
+              A                                   
+                                      A           
+   B                                              
+                                                  
+G                A                      A         
+          WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW        A 
+                                             A    
+                     A                            
+                                    A             
+                                                  
+                            A                     
+                          A   A                A  
+    A                                             
+                                                 A
+                                                A 
+       sSsSs                                      
+     A                A                           
+     B                                            
+    A                                           A 
+                                                  
+        A               A                         
+                   A                              
+                                                A 
+                  A                               
+A             A                                   
+                                                  
+                         TtTtTtTtTtTtTt  A        
+                       A t     A       A          
+                         T          A             
+                         t                        
+                         T                        
+                         tA             A         
+                         T                        
+                         t                        
+                         T                        
+           A             t                        
+                         TtTtTt                   
+                 A                                
+                                                  
+  B                 A                            A
+     B                                       A    
+                A                                 
+                                                  
+                       A                          
+                    A                             
+          WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW          
+                                                  
+                                     A            
+        A                                         
+                             A                    
+ A                                                
+                              A                   
+                                    A             
+                       A                          
+                                                  
+0
+N
+N
+0
+0
+0
+20
+11
+31
+38
+0
+0
+5
+29
+20
+20
+20
+20
+20
+11
+10
+9
+8
+7
+31
+31
+31
+31
+31
+31
+31
+31
+31
+31
+31
+31
+31
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+41
+41
+41
+41
+41
+38
+37
+36
+35
+34
+33
+32
+31
+30
+29
+28
+27
+26
+25
+25
+25
+25
+25
+25
+25
+25
+25
+25
+25
+26
+27
+28
+29
+30

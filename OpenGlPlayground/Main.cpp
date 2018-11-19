@@ -260,7 +260,7 @@ void WriteGameToFile() {
 	cin >> fileLocation;
 
 	ofstream gameFile;
-	gameFile.open(fileLocation + "\\game.txt");
+	gameFile.open(fileLocation);
 
 	//Write board to file
 	for (int i = 0; i < gridWidth; i++) {
@@ -318,6 +318,7 @@ void ReadGameFromFile() {
 		for (int j = 0; j < gridHeight; j++) {
 			gameFile.get(board[i][j]);
 		}
+		gameFile.get();
 	}
 
 	//Read game variables from file

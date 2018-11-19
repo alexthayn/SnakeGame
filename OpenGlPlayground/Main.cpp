@@ -15,7 +15,7 @@ using namespace std;
 const int gridHeight = 50;
 const int gridWidth = 60;
 const int INITIAL_SIZE = 5;
-const double PGenerateFruit = .5;
+const double PGenerateFruit = .1;
 
 bool bw = false;
 bool bw2 = false;
@@ -125,6 +125,43 @@ void update() {
 	
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//Snake 1//
+	//Randomly move apples away from snake 1 50% of the time
+	bool moveApple = (rand()% 2 == 0);
+	if (moveApple) {
+		switch (direction) {
+		case 'N': 
+			if (board[headX][headY + 1] == 'A') {
+				board[headX][headY + 1] = ' ';
+				if (board[headX + 1][headY] == ' ')
+					board[headX + 1][headY] = 'A';
+			}
+			break;
+		case 'E':
+			if (board[headX + 1][headY] == 'A') {
+				board[headX + 1][headY] = ' ';
+				if (board[headX][headY + 1] == ' ')
+					board[headX][headY + 1] = 'A';
+			}
+			break;
+		case 'S':
+			if (board[headX][headY-1] == 'A') {
+				board[headX][headY-1] = ' ';
+				if (board[headX-1][headY] == ' ')
+					board[headX-1][headY] = 'A';
+			}
+			break;
+		case 'W':
+			if (board[headX - 1][headY] == 'A') {
+				board[headX - 1][headY] = ' ';
+				if (board[headX][headY - 1] == ' ')
+					board[headX][headY - 1] = 'A';
+			}
+			break;
+		}
+		
+	}
+
 	//Find out where the head will be...
 	
 	switch (direction) {
@@ -184,6 +221,41 @@ void update() {
 	snakeY.push_front(headY);
 	
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//Snake 2//
+	//Randomly move apples away from snake 2 50% of the time
+	moveApple = (rand() % 2 == 0);
+	if (moveApple) {
+		switch (direction2) {
+		case 'N':
+			if (board[head2X][head2Y + 1] == 'A') {
+				board[head2X][head2Y + 1] = ' ';
+				if (board[head2X + 1][head2Y] == ' ')
+					board[head2X + 1][head2Y] = 'A';
+			}
+			break;
+		case 'E':
+			if (board[head2X + 1][head2Y] == 'A') {
+				board[head2X + 1][head2Y] = ' ';
+				if (board[head2X][head2Y + 1] == ' ')
+					board[head2X][head2Y + 1] = 'A';
+			}
+			break;
+		case 'S':
+			if (board[head2X][head2Y-1] == 'A') {
+				board[head2X][head2Y-1] = ' ';
+				if (board[head2X-1][head2Y] == ' ')
+					board[head2X-1][head2Y] = 'A';
+			}
+			break;
+		case 'W':
+			if (board[head2X - 1][head2Y] == 'A') {
+				board[head2X - 1][head2Y] = ' ';
+				if (board[head2X][head2Y - 1] == ' ')
+					board[head2X][head2Y - 1] = 'A';
+			}
+			break;
+		}
+	}
 	switch (direction2) {
 		case 'N': head2Y++; break;
 		case 'E': head2X++; break;
